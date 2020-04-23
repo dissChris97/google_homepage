@@ -2,14 +2,49 @@
 <html>
     <head>
         <meta charset = "utf-8"/>
+        <!-- Auto refreshes page every thirty seconds for testing purposes -->
+        <meta http-equiv="refresh" content="5">
         <style>
-            /* edit google_logo location and size */
+            /* google logo */
             #google_logo {
-                position: relative;
+                display: block;
+                margin: 0 auto;
                 padding-top: 109px;
                 padding-bottom: 35px;
                 width: 272px; 
                 height: 92px;
+            }
+            
+            /* google search bar */
+            #google_search_bar {
+                position: relative;
+                background: transparent;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                height: 44px;
+                margin: 0 auto;
+                width: 482px;
+            }
+
+            /* google search bar on hover */
+            #google_search_bar:hover {
+                box-shadow: 0 1px 6px 0
+                    rgba(32, 33, 36, 0.28);
+                border-color: 
+                    rgba(223, 225, 229, 0);
+            }
+
+            /* google search text box */
+            #google_search {
+                position: absolute;
+                background: transparent;
+                border: 0 solid;
+                border-radius: 0 24px 24px 0;
+                height: 41px;
+                margin: 0 auto;
+                width: 447px;
+                left: 35px;
+                
             }
         </style>
         <title>
@@ -25,9 +60,14 @@
     </head>
 
     <body>
-        <div>
-            <!-- adding google logo -->
+        <!-- adds google logo -->
+        <div id="google_logo">
             <img id="google_logo" alt="Google" src="/home/dakota/Desktop/Coding Projects/the_odin_project/google_homepage/google.png">
+
+            <!-- adds google search bar -->
+            <div id="google_search_bar">
+                <input type="text" id="google_search">
+            </div>
         </div>
     </body>
 

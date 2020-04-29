@@ -74,26 +74,50 @@
                 color: #222;
             }
 
-            #top_nav_ul {
-                top: 16px;
+            /* positioning left side top nav bar */
+            #top_nav_left {
+                top: 17px;
                 position: absolute;
                 margin: 7px 0 0 10px;
-                display: inline;
-                padding-left: 15px;
+                font-size: 13px;
+                color: #222;
+                font-family: arial, sans-serif;
+            }
+
+            /* positioning right side top nav bar */
+            #top_nav_right {
+                top: 17px;
+                min-width: 181px;
+                padding-left: 30px;
+                padding-right: 30px;
+                display: flex;
+                position: relative;
+                text-align: right;
+                align-items: center;
+                justify-content: flex-end;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                white-space: nowrap;
+                font-size: 13px;
+                color: #222;
+                font-family: arial, sans-serif;
+            }
+
+            /* top nav bar class */
+            #top_nav {
+                display: inline-block;
                 color: #000;
                 opacity: 0.75;
-                font-family: arial, sans-serif;
-                font-size: 14px;
+                padding-left: 15px;
+                text-decoration: none;
                 list-style-type: none;
             }
 
-            #top_nav_ul:hover {
+            /* top nav bar class on hover */
+            #top_nav:hover {
                 text-decoration: underline;
             }
 
-            #store {
-                 float: left;  
-            }
 
         </style>
         <title>
@@ -110,16 +134,18 @@
 
     <body>
 
-        <!-- adds top nav bar -->
-        <ul id="top_nav_ul">
-            <li id="about"><a href="dummy_address.com">About</a></li>
+        <!-- adds left side top nav bar -->
+        <div id="top_nav_left">
+            <a id="top_nav" href="#">About</a>
 
-            <li id="store"><a href="dummy_address.com">Store</a></li>
+            <a id="top_nav" href="#">Store</a>
+        </div>
 
-            <li id="gmail"><a href="dummy_address.com">Gmail</a></li>
+        <div id="top_nav_right">
+            <a id="top_nav" href="#">Gmail</a>
 
-            <li id="images"><a href="dummy_address.com">Images</a></li>
-        </ul>
+            <a id="top_nav" href="#">Images</a>
+        </div>
 
         <!-- adds google logo -->
         <div id="google_logo">

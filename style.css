@@ -1,0 +1,171 @@
+/* google logo */
+#google_logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 109px;
+    padding-bottom: 35px;
+    width: 272px; 
+    height: 92px;
+}
+
+/* google search bar */
+#google_search_bar {
+    position: relative;
+    background: transparent;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+}
+
+/* google search bar on hover */
+#google_search_bar:hover {
+    box-shadow: 0 1px 6px 0
+        rgba(32, 33, 36, 0.28);
+    border-color: 
+        rgba(223, 225, 229, 0);
+}
+
+/* google search text box */
+#google_search {
+    position: absolute;
+    background: transparent;
+    border: 0 solid;
+    border-radius: 0 24px 24px 0;
+    height: 41px;
+    margin: 0 auto;
+    width: 447px;
+    left: 35px;  
+}
+
+/* google search button class*/
+.gs_button {
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none; 
+    display: inline-block;
+}
+
+/* google search button hover class */
+.gs_button:hover {
+    box-shadow: 0 1px 1px 
+        rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+/* top nav bar class */
+#top_nav {
+    top: 16px;
+    position: relative;
+}
+
+/* positioning left side top nav bar */
+#top_nav_left {
+    display: inline-block;
+}
+
+/* positioning right side top nav bar */
+#top_nav_right {
+    position: relative;
+    float: right;
+}
+
+.top_nav_style_left {
+    font-size: 14px;
+    opacity: 0.75;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: arial, sans-serif;
+    margin: 7px 0 0 10px;
+    padding-left: 15px;
+}
+
+.top_nav_style_right {
+    font-size: 14px;
+    opacity: 0.75;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: arial, sans-serif;
+    text-align: right;
+    line-height: 24px;
+    padding-right: 15px;
+}
+
+#top_nav_right_cube {
+    height: 17px;
+    width: 17px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+#top_nav_right_login {
+    height: 30px;
+    width: 70px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.top_nav_style_left:hover {
+    text-decoration: underline;
+}
+
+.top_nav_style_right:hover {
+    text-decoration: underline;
+}
+
+/* adds container for bottom nav */
+#bottom_nav {
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* positioning left side bottom nav bar */
+#bottom_nav_left {
+    display: inline-block;
+}
+
+/* positioning right side bottom nav bar */
+#bottom_nav_right {
+    float: right;
+    margin-right: 30px;
+    padding-left: 27px;
+}
+
+/* styles and positions text bottom nav bar */
+.bottom_nav_style {
+    font-size: 14px;
+    color: #5f6368;
+    white-space: nowrap;
+    font-family: arial, sans-serif;
+    list-style-type: none; 
+    text-decoration: none;
+    padding-left: 27px;
+}
+
+/* bottom nav bar text on hover */
+.bottom_nav_style:hover {
+    text-decoration: underline;
+}

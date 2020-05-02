@@ -2,232 +2,67 @@
 <html>
     <head>
         <meta charset = "utf-8"/>
-        <!-- Auto refreshes page every thirty seconds for testing purposes -->
-        <meta http-equiv="refresh" content="5">
-        <style>
-            /* google logo */
-            #google_logo {
-                display: block;
-                margin: 0 auto;
-                padding-top: 109px;
-                padding-bottom: 35px;
-                width: 272px; 
-                height: 92px;
-            }
-            
-            /* google search bar */
-            #google_search_bar {
-                position: relative;
-                background: transparent;
-                border: 1px solid #dfe1e5;
-                border-radius: 24px;
-                height: 44px;
-                margin: 0 auto;
-                width: 482px;
-            }
-
-            /* google search bar on hover */
-            #google_search_bar:hover {
-                box-shadow: 0 1px 6px 0
-                    rgba(32, 33, 36, 0.28);
-                border-color: 
-                    rgba(223, 225, 229, 0);
-            }
-
-            /* google search text box */
-            #google_search {
-                position: absolute;
-                background: transparent;
-                border: 0 solid;
-                border-radius: 0 24px 24px 0;
-                height: 41px;
-                margin: 0 auto;
-                width: 447px;
-                left: 35px;  
-            }
-
-            /* google search button class*/
-            .gs_button {
-                background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
-                background-color: #f2f2f2;
-                border: 1px solid #f2f2f2;
-                border-radius: 4px;
-                color: #5f6368;
-                font-family: arial, sans-serif;
-                font-size: 14px;
-                margin: 11px 4px;
-                padding: 0 16px;
-                line-height: 27px;
-                height: 36px;
-                min-width: 54px;
-                text-align: center;
-                cursor: pointer;
-                user-select: none; 
-            }
-
-            /* google search button hover class */
-            .gs_button:hover {
-                box-shadow: 0 1px 1px 
-                    rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-                border: 1px solid #c6c6c6;
-                color: #222;
-            }
-
-            /* top nav bar class */
-            #top_nav {
-                display: inline-block;
-                color: #000;
-                opacity: 0.75;
-                padding-left: 15px;
-                text-decoration: none;
-                list-style-type: none;
-            }
-
-            /* top nav bar class on hover */
-            #top_nav:hover {
-                text-decoration: underline;
-            }
-
-            /* positioning left side top nav bar */
-            #top_nav_left {
-                top: 17px;
-                position: absolute;
-                margin: 7px 0 0 10px;
-                font-size: 13px;
-                color: #222;
-                font-family: arial, sans-serif;
-                z-index: 1;
-            }
-
-            /* positioning right side top nav bar */
-            #top_nav_right {
-                top: 17px;
-                min-width: 90px;
-                padding-left: 30px;
-                padding-right: 30px;
-                display: flex;
-                position: relative;
-                text-align: right;
-                align-items: center;
-                justify-content: flex-end;
-                margin-left: 0 !important;
-                margin-right: 0 !important;
-                white-space: nowrap;
-                font-size: 13px;
-                color: #222;
-                font-family: arial, sans-serif;
-            }
-
-            #bottom_nav {
-                visibility: visible;
-                font-family: arial, sans-serif;
-                font-size: 14px;
-            }
-
-            #bottom_nav_bottom:hover {
-                text-decoration: underline;
-            }
-
-            #bottom_nav_top {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 40px;
-                background: #f2f2f2;
-                line-height: 40px;
-                min-width: 980px;
-                border-top: 1px solid #e4e4e4;
-                border-bottom: 1px solid #e4e4e4;
-                text-align: left;
-                color: rgba(0, 0, 0, 0.54);
-                padding-left: 27px;               
-            }
-
-            #bottom_nav_bottom {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: #f2f2f2;
-                line-height: 40px;
-            }
-
-            #bottom_nav_left {
-                text-decoration: none; 
-                padding-left: 27px;
-                float: left;
-                white-space: nowrap;
-                margin-left: 30px;
-                margin: 0 !important;
-            }
-
-            #bottom_nav_right {
-                text-decoration: none; 
-                float: right;
-                padding-left: 27px;
-                white-space: nowrap;
-                margin-right: 30px;
-                margin: 0 !important;
-            }
-        </style>
+        
         <title>
             Google
         </title>
 
         <!-- adding title bar logo to homepage -->
-        <link rel = "icon" href="/home/dakota/Desktop/Coding Projects/the_odin_project/google_homepage/logo.jpg" type="image/x-icon">
+        <link rel = "icon" href="http://127.0.0.1:5500/logo.jpg" type="image/x-icon">
 
-        <!-- adds similar Google Font-->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"> 
-
+        <!-- adds css style sheet -->
+        <link rel="stylesheet" href="http://127.0.0.1:5500/style.css">
     </head>
 
     <body>
 
-        <!-- adds left side top nav bar -->
-        <div id="top_nav_left">
-            <a id="top_nav" href="#">About</a>
+        <!-- adds top nav bar -->
+        <div id="top_nav">
 
-            <a id="top_nav" href="#">Store</a>
+            <!-- adds left side top nav bar -->
+            <div id="top_nav_left">
+                <a class="top_nav_style_left" href="#">About</a>
+
+                <a class="top_nav_style_left" href="#">Store</a>
+            </div>
+
+            <!-- adds right side top nav bar -->
+            <div id="top_nav_right">
+                <a class="top_nav_style_right" href="#">Gmail</a>
+
+                <a class="top_nav_style_right" href="#">Images</a>
+
+                <img id="top_nav_right_cube" src="http://127.0.0.1:5500/cube.png">
+
+                <img id="top_nav_right_login" src="http://127.0.0.1:5500/login.png">
+            </div>
         </div>
-
-        <!-- adds right side top nav bar -->
-        <div id="top_nav_right">
-            <a id="top_nav" href="#">Gmail</a>
-
-            <a id="top_nav" href="#">Images</a>
-
-            <img id="top_nav" alt="Google Apps" src="/home/dakota/Desktop/Coding Projects/the_odin_project/google_homepage/cube.png">
-
-            <img id="top_nav" alt="User Login" src="/home/dakota/Desktop/Coding Projects/the_odin_project/google_homepage/user.png">
-        </div>
-
+        
+        <!-- adds bottom nav bar -->
         <div id="bottom_nav">
-            
-            <div id="bottom_nav_bottom">
-                <a id="bottom_nav_left" href="#">Advertising</a>
 
-                <a id="bottom_nav_left" href="#">Business</a>
+            <!-- adds left side bottom nav bar -->
+            <div id="bottom_nav_left">
+                <a class="bottom_nav_style" href="#">Advertising</a>
 
-                <a id="bottom_nav_left" href="#">How Search works</a>
+                <a class="bottom_nav_style" href="#">Business</a>
+
+                <a class="bottom_nav_style" href="#">How Search works</a>
             </div>
 
-            <div id="bottom_nav_bottom">
-                <a id="bottom_nav_right" href="#">Settings</a>
+            <!-- adds right side bottom nav bar -->
+            <div id="bottom_nav_right">
+                <a class="bottom_nav_style" href="#">Privacy</a>
 
-                <a id="bottom_nav_right" href="#">Terms</a>
+                <a class="bottom_nav_style" href="#">Terms</a>
 
-                <a id="bottom_nav_right" href="#">Privacy</a>
-            </div>
-
-            <div id="bottom_nav_top">
-                Germany
+                <a class="bottom_nav_style" href="#">Settings</a>
             </div>
         </div>
+
         <!-- adds google logo -->
         <div id="google_logo">
-            <img id="google_logo" alt="Google" src="/home/dakota/Desktop/Coding Projects/the_odin_project/google_homepage/google.png">
+            <img id="google_logo" alt="Google" src='http://127.0.0.1:5500/google.png'>
 
             <!-- adds google search bar -->
             <div id="google_search_bar">
@@ -240,7 +75,7 @@
             </div>
             
             <!-- adds i'm feeling lucky button -->
-            <div id="lucky_button" class="gs_button gs_button: hover">
+            <div id="lucky_button" class="gs_button gs_button:hover">
                 I'm Feeling Lucky
             </div>
         </div>

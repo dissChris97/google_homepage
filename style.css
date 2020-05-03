@@ -2,7 +2,7 @@
 #google_logo {
     display: block;
     margin: 0 auto;
-    padding-top: 109px;
+    padding-top: 82px;
     padding-bottom: 35px;
     width: 272px; 
     height: 92px;
@@ -17,6 +17,7 @@
     height: 44px;
     margin: 0 auto;
     width: 482px;
+    right: 105px;
 }
 
 /* google search bar on hover */
@@ -28,7 +29,7 @@
 }
 
 /* google search text box */
-#google_search {
+#text_box {
     position: absolute;
     background: transparent;
     border: 0 solid;
@@ -37,6 +38,20 @@
     margin: 0 auto;
     width: 447px;
     left: 35px;  
+}
+
+/* magnifying glass positioning */
+#glass {
+    position: relative;
+    right: 90px;
+    bottom: 33px;
+    z-index: 2;
+}
+
+/* search buttons positioning */
+#center {
+    height: 70px;
+    position: absolute;
 }
 
 /* google search button class*/
@@ -57,6 +72,7 @@
     cursor: pointer;
     user-select: none; 
     display: inline-block;
+    z-index: 1;
 }
 
 /* google search button hover class */
@@ -68,7 +84,7 @@
     color: #222;
 }
 
-/* top nav bar class */
+/* container for top nav class */
 #top_nav {
     top: 16px;
     position: relative;
@@ -85,6 +101,7 @@
     float: right;
 }
 
+/* styling left side top nav bar */
 .top_nav_style_left {
     font-size: 14px;
     opacity: 0.75;
@@ -96,7 +113,9 @@
     padding-left: 15px;
 }
 
+/* styling right side top nav bar */
 .top_nav_style_right {
+    position: relative;
     font-size: 14px;
     opacity: 0.75;
     color: black;
@@ -106,26 +125,35 @@
     text-align: right;
     line-height: 24px;
     padding-right: 15px;
+    bottom: 14px;
 }
 
+/* styling and positioning google apps */
 #top_nav_right_cube {
-    height: 17px;
-    width: 17px;
+    position: relative;
+    height: 19px;
+    width: 19px;
     padding-right: 15px;
     display: inline-block;
+    bottom: 11px;
 }
 
+/* styling and positioning login button */
 #top_nav_right_login {
+    position: relative;
     height: 30px;
     width: 70px;
     padding-right: 15px;
     display: inline-block;
+    bottom: 6px;
 }
 
+/* top nav styling on hover */
 .top_nav_style_left:hover {
     text-decoration: underline;
 }
 
+/* top nav styling on hover */
 .top_nav_style_right:hover {
     text-decoration: underline;
 }
